@@ -1,0 +1,14 @@
+FROM node:22-alpine
+
+
+WORKDIR /app
+COPY package*.json .
+
+
+#--only=production install only the dependencies that are needed.
+#It does install the devDependencies
+RUN npm ci --only=production  
+
+COPY index.js index.js
+
+CMD ["node", "index.js"]
