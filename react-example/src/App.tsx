@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is application BLUE!
+          This is application RED!
         </p>
         <p> It is runnning on nginx! And it is great</p>
 
